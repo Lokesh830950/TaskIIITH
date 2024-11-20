@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parsed Data</title>
+</head>
+<body>
+    <h1>Parsed Data</h1>
+    {{ data|safe }}
+
+    <h2>Decoded Images</h2>
+    {% for img in images %}
+        <img src="/images/{{ img }}" alt="Decoded Image">
+    {% endfor %}
+
+    <h2>Web Server Logs Summary</h2>
+    <ul>
+        {% for key, value in web_logs.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

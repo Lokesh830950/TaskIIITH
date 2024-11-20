@@ -2,13 +2,25 @@
 <html>
 <head>
     <title>IoT Log Parser</title>
+    <link rel="stylesheet" href="static\styles.css">
 </head>
 <body>
-    <h1>Welcome to IoT Log Parser</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="file">Upload Log File:</label>
-        <input type="file" name="file" id="file">
-        <button type="submit">Upload</button>
-    </form>
+    <nav>
+        <div class="logo">IoT Log Parser</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to IoT Log Parser</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Upload Log File:</label>
+            <input type="file" name="file" id="file">
+            <button type="submit">Upload</button>
+        </form>
+    </main>
 </body>
 </html>
